@@ -1,24 +1,17 @@
 package com.springrest.springrest.Service;
 
-import com.springrest.springrest.entities.course;
+import com.springrest.springrest.entities.Course;
 import java.util.List;
 
-// This is an INTERFACE
-// It only defines WHAT operations we can do (not HOW)
 public interface CourseService {
 
-    // Get all courses
-    List<course> getcourse();
+    List<Course> getcourse();
 
-    // Get single course by ID
-    course getcourse(long courseId);
+    Course getcourse(long courseId);
 
-    // Add new course
-    public course addcourse(course course);
+    Course addcourse(Course course);
 
-    // Update existing course
-    public course updatecourse(course course);
+    Course updatecourse(Course course);
 
-    // Delete course by ID
-    public void deletecourse(long courseId);
+    void deletecourse(long courseId);
 }
